@@ -9,7 +9,7 @@ Authors: David Mutchler, Dave Fisher, Valerie Galluzzi, Amanda Stouder,
 # On Line 5 above, replace  PUT_YOUR_NAME_HERE  with your own name.
 ########################################################################
 import rosegraphics as rg
-window=rg.TurtleWindow
+window=rg.TurtleWindow()
 matttt=rg.SimpleTurtle('turtle')
 matttt.pen=rg.Pen('red',25)
 matttt.speed=5
