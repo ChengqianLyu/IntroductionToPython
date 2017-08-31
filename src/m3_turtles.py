@@ -14,7 +14,7 @@ Authors: David Mutchler, Dave Fisher, Valerie Galluzzi, Amanda Stouder,
 """
 ########################################################################
 #
-# Done: 1.
+# DONE: 1.
 #  (Yes, that means for YOU to DO things per these instructions:)
 #
 # On Line 13 above, replace  Chengqian Lyu  with your OWN name.
@@ -50,7 +50,7 @@ import rosegraphics as rg
 #     TurtleWindow is in the   rg  (shorthand for rosegraphics) module.
 # ----------------------------------------------------------------------
 window = rg.TurtleWindow()
-window.delay(20)  # Bigger numbers mean slower animation.
+window.delay(50)  # Bigger numbers mean slower animation.
 
 # ----------------------------------------------------------------------
 # Makes (constructs) a   SimpleTurtle   object.
@@ -60,24 +60,26 @@ dave = rg.SimpleTurtle()
 # ----------------------------------------------------------------------
 # Ask the SimpleTurtle objects to do things:
 # ----------------------------------------------------------------------
-dave.forward(100)
-dave.left(90)
 dave.forward(200)
-
+dave.left(100)
+dave.forward(150)
+dave.right(10)
+dave.forward(200)
 # ----------------------------------------------------------------------
 # Construct a new turtle and ask it to do things.
 # ----------------------------------------------------------------------
 matt = rg.SimpleTurtle('turtle')
-matt.pen = rg.Pen('red', 30)
-matt.speed = 10  # Faster
-matt.backward(50)
-matt.left(90)
-matt.forward(50)
-
+matt.pen = rg.Pen('green', 50)
+matt.speed = 5  # Faster
+matt.backward(200)
+matt.left(120)
+matt.forward(150)
+matt.left(300)
+matt.forward(400)
 
 ########################################################################
 #
-# TODO: 3.
+# DONE: 3.
 #   Add a few more line of your own code above to make one of the
 #   existing Turtles move some more and/or have different
 #   characteristics.
@@ -109,10 +111,19 @@ matt.forward(50)
 #   As always, test by running the module.
 #
 ########################################################################
-
+hao=rg.SimpleTurtle('turtle')
+hao.pen=rg.Pen('yellow',90)
+hao.speed=7# Faster
+hao.forward(100)
+hao.left(90)
+hao.backward(100)
+hao.left(90)
+hao.forward(100)
+hao.left(90)
+hao.backward(100)
 ########################################################################
 #
-# TODO: 5.
+# DONE: 5.
 #   Run one more time to be sure that all is still OK.
 #   Ensure that no blue bars on the scrollbar-thing to the right remain.
 #
